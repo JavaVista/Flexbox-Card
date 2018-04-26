@@ -1,0 +1,74 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 95vh;
+
+  display: flex; /* Body use flexbox */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+.card {
+  width: 150px; /* Width of cards */
+  border: 1px solid #ef9a9a; /* Set up border red */
+  border-radius: 4px; /* Slightly curve edges */
+  overflow: hidden; /* Fixes the corners */
+  margin: 5px; /* Space between cards */
+  display: flex; /* children use flexbox */
+  flex-direction: column; /* Rotate axis */
+}
+.card-header {
+  color: #d32f2f; /* Text dark red */
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600; /* bold text */
+  border-bottom: 1px solid #ef9a9a; /* Bottom of header and color that matches .card outer border */
+  background-color: #ffebee; /* Barckground of header light red */
+  padding: 5px 10px; /* Padding for text so it looks centered and does not run into the border */
+}
+.card-main {
+  display: flex; /* Children use flexbox */
+  flex-direction: column; /* Rotate axis to vertical */
+  justify-content: center; /* Group children in center */
+  align-items: center; /* Group children in center (+axis) */
+  padding: 15px 0; /* Add padding to the top and bottom */
+}
+.material-icons {
+  font-size: 36px; /* Icons from Google Material */
+  color: #d32f2f;
+  margin-bottom: 5px;
+}
+.main-description {
+  color: #d32f2f;
+  font-size: 12px;
+  text-align: center;
+}
+/* Colors and additional colors from Google Material https://material.io/guidelines/style/color.html */
+
+#yellow-border {
+  border-color: #fff176;
+}
+#yellow-header {
+  background-color: #ffffa8;
+  border-color: #fff176;
+  color: #c6a700;
+}
+#yellow-color {
+  color: #c6a700;
+}
+#blue-border {
+  border-color: #29b6f6;
+}
+#blue-header {
+  background-color: #73e8ff;
+  border-color: #29b6f6;
+  color: #0086c3;
+}
+#blue-color {
+  color: #0086c3;
+}
